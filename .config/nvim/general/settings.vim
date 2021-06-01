@@ -45,4 +45,5 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 " You can't stop me
 cmap w!! w !sudo tee %
 
-let g:python3_host_prog = expand("/usr/bin/python")
+"let g:python3_host_prog = expand("/usr/bin/python")
+let g:python_host_prog='/usr/local/bin/python'
