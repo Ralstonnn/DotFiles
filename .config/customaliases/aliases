@@ -27,8 +27,9 @@ alias remove='sudo apt remove'
 alias update='sudo apt update'
 
 # MariaDB
-alias smdb='sudo systemctl start mariadb'
-alias stmdb='sudo systemctl stop mariabd'
+alias smdb='sudo service mariabd start'
+alias stmdb='sudo service mariabd stop'
+alias db='sudo mysql -u root -p'
 
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME/'
