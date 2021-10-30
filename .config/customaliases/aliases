@@ -27,8 +27,8 @@ alias remove='sudo apt remove'
 alias update='sudo apt update'
 
 # MariaDB
-alias smdb='sudo service mariadb start'
-alias stmdb='sudo service mariadb stop'
+alias smdb='sudo service mysql start'
+alias stmdb='sudo service mysql stop'
 alias db='sudo mysql -u root -p'
 
 
