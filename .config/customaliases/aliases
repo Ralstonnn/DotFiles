@@ -32,6 +32,4 @@ alias stmdb='sudo systemctl stop mariabd'
 alias db='sudo mysql -u root -p'
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME/'
-alias nvconfig='/usr/bin/git --git-dir=$HOME/GitHub/.myneovimconfig --work-tree=$HOME/.config'
-alias alconfig='/usr/bin/git --git-dir=$HOME/GitHub/.customaliases --work-tree=$HOME/.config/customaliases'
-alias stolyarovgit='/usr/bin/git --git-dir=$HOME/Documents/Programming/.stolyarovBooks --work-tree=$HOME/Documents/Programming'
+alias configupd="config commit -am 'update' && config push"
