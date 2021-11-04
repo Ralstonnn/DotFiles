@@ -29,7 +29,7 @@ alias update='yay -Syu'
 # MariaDB
 alias smdb='sudo systemctl start mariadb'
 alias stmdb='sudo systemctl stop mariabd'
-
+alias db='sudo mysql -u root -p'
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME/'
 alias nvconfig='/usr/bin/git --git-dir=$HOME/GitHub/.myneovimconfig --work-tree=$HOME/.config'
