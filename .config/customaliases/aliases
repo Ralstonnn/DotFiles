@@ -31,9 +31,10 @@ alias smdb='sudo service mysql start'
 alias stmdb='sudo service mysql stop'
 alias db='sudo mysql -u root -p'
 
-
+# WSL config
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME/'
 alias cfgupd='config commit -am "update" && config push'
-alias nvconfig='/usr/bin/git --git-dir=$HOME/GitHub/.myneovimconfig --work-tree=$HOME/.config'
-alias alconfig='/usr/bin/git --git-dir=$HOME/GitHub/.customaliases --work-tree=$HOME/.config/customaliases'
-alias stolyarovgit='/usr/bin/git --git-dir=$HOME/Documents/Programming/.stolyarovBooks --work-tree=$HOME/Documents/Programming'
+
+# Windows config
+alias wincfg='/usr/bin/git --git-dir=/mnt/e/.cfg --work-tree=/mnt/c/Users/Andrew'
+alias wincfgupd='wincfg commit -am "update" && wincfg push'
