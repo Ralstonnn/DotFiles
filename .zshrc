@@ -16,8 +16,14 @@ export ZSH="/home/ralstonnn/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="bira"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+#ZSH_THEME="powerlevel10k/powerlevel10k"
 
+eval "$(oh-my-posh --init --shell zsh --config ~/.poshthemes/my_theme.json)"
+
+stolyarov() { 
+  cd "$HOME/Programming/StolyarovBooks/Assembler";
+  zathura "$HOME/Programming/StolyarovBooks/progintro_e2v1.pdf" &;
+}
 
 source "$HOME/.config/customaliases/aliases"
 
@@ -115,4 +121,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
