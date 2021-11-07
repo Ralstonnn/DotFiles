@@ -36,6 +36,8 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 "set autochdir                           " Your working directory will always be the same as your working directory
 set incsearch
 
+autocmd Filetype nasm setlocal tabstop=4 " Sets tab size to 4 for asm files
+autocmd BufNew,BufRead *.asm set ft=nasm
 
 "set colorcolumn=100
 "highlight ColorColumn ctermbg=0 
