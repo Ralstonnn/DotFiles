@@ -36,6 +36,7 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 "set autochdir                           " Your working directory will always be the same as your working directory
 set incsearch
 
+autocmd Filetype nasm setlocal tabstop=4 " Sets tab size to 4 for asm files
 
 "set colorcolumn=100
 "highlight ColorColumn ctermbg=0 
@@ -44,6 +45,9 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 
 " You can't stop me
 cmap w!! w !sudo tee %
+
+autocmd BufNew,BufRead *.asm set ft=nasm
+
 
 "let g:python3_host_prog = expand("/usr/bin/python")
 let g:python_host_prog='/usr/local/bin/python'
