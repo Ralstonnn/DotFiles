@@ -21,6 +21,7 @@ export ZSH="/home/ralstonnn/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="bira"
 ZSH_THEME="powerlevel10k/powerlevel10k"
+#eval "$(oh-my-posh --init --shell zsh --config $HOME/.config/ohmyposh/mytheme.json)"
 
 
 source "$HOME/.config/customaliases/aliases"

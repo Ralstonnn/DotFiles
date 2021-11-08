@@ -39,8 +39,8 @@ syntax on
 
 "colorscheme dracula
 
-set background=dark
-colorscheme andromeda
-
-"colorscheme gruvbox
 "set background=dark
+"colorscheme andromeda
+
+colorscheme gruvbox
+set background=dark
