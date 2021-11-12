@@ -21,6 +21,9 @@ alias flaskrn='flask run'
 # Neovim
 alias nv='nvim'
 
+# Neovide
+alias nvd='neovide'
+
 # Pacman
 alias install='yay -S'
 alias remove='yay -R'
