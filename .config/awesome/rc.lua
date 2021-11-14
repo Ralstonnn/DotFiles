@@ -193,7 +193,7 @@ awful.screen.connect_for_each_screen(function(s)
     -- set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ " 1 ", " 2 ", " 3 "," 4 ", " 5 ", " 6 ", "  ", "  ", "  " }, s, awful.layout.layouts[1])
+    awful.tag({ " 1 ", " 2 ", " 3 "," 4 ", " 5 ", " 6 ", "   ", "   ", "   " }, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -315,8 +315,8 @@ globalkeys = gears.table.join(
    
 
     -- My keybindings
-    awful.key({ modkey, "Shift" }, "g", function () awful.spawn("google-chrome-stable") end,
-        {description = "open chrome", group = "launcher"}),
+    awful.key({ modkey, "Shift" }, "g", function () awful.spawn("firefox") end,
+        {description = "open firefox", group = "launcher"}),
     awful.key({ modkey, "Shift" }, "d", function () awful.spawn("discord") end,
         {description = "open discord", group = "launcher"}),
     awful.key({ modkey, "Shift" }, "s", function () awful.spawn("spotify") end,
@@ -563,11 +563,11 @@ awful.rules.rules = {
     -- Set Firefox to always map on the tag named "2" on screen 1.
     -- { rule = { class = "Firefox" },
     --   properties = { screen = 1, tag = "2" } },
-    { rule = { class = "discord" }, properties = { screen = 1, tag = "  " } },
-    { rule = { class = "TelegramDesktop" }, properties = { screen = 1, tag = "  " } },
-    { rule = { class = "Spotify" }, properties = { screen = 1, tag =  "  "} },
-    { rule = { class = "Pavucontrol" }, properties = { screen = 1, tag =  "  "} },
-    { rule = { class = "Google-chrome" }, properties = { screen = 1, tag =  "  "} },
+    { rule = { class = "discord" }, properties = { screen = 1, tag = "   " } },
+    { rule = { class = "TelegramDesktop" }, properties = { screen = 1, tag = "   " } },
+    { rule = { class = "Spotify" }, properties = { screen = 1, tag =  "   "} },
+    { rule = { class = "Pavucontrol" }, properties = { screen = 1, tag =  "   "} },
+    { rule = { class = "Google-chrome" }, properties = { screen = 1, tag =  "   "} },
 }
 -- }}}
 
