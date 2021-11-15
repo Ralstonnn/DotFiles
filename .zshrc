@@ -33,8 +33,8 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Dotnet
-export PATH=$PATH:$HOME/cli
-export DOTNET_ROOT=$HOME/cli
+export PATH=$PATH:$HOME/dotnet/cli
+export DOTNET_ROOT=$HOME/dotnet/cli
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
