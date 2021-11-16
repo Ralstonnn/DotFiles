@@ -32,7 +32,7 @@ alias update='yay -Syu'
 # MariaDB
 alias smdb='sudo systemctl start mariadb'
 alias stmdb='sudo systemctl stop mariabd'
-alias db='sudo mysql -u root -p'
+alias db='mysql -u root -p'
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME/'
 alias configupd="config commit -am 'update' && config push"
